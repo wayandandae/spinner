@@ -1,7 +1,9 @@
+// set timeout to draw | on console to be 100ms
 setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 100);
 
+// queue up next timeouts every 200ms
 setTimeout(() => {
   process.stdout.write('\r/   ');
 }, 300);
@@ -31,7 +33,7 @@ setTimeout(() => {
   process.stdout.write('\r\\   ');
 }, 1500);
 
-// after two complete cycles
+// after two complete cycles, display the initial spinner
 setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 1700);
